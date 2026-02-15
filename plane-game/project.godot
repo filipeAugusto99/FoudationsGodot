@@ -15,6 +15,15 @@ run/main_scene="uid://ddonk3df4keie"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
+[editor]
+
+naming/scene_name_casing=1
+naming/script_name_casing=1
+
 [input]
 
 ui_left={

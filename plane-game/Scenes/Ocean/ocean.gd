@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var plane: Sprite2D = $Plane
+@onready var plane: Sprite2D = $Carrier/Plane
 @onready var heli: Sprite2D = $Heli
 @onready var eating_sound: AudioStreamPlayer = $EatingSound
 
@@ -24,9 +24,4 @@ func _process(delta: float) -> void:
 		plane.rotate(1.5 * delta)
 	
 	if Input.is_action_just_pressed("ui_accept"):
-		eating_sound.play()
-	
-	
-func _unhandled_input(event):
-	if event.is_action_pressed("ui_left"):
-		print("ui_left detected")
+		plane.global_position = Vector2(350, 150)
