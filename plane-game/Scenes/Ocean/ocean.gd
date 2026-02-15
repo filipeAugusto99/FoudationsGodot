@@ -12,9 +12,11 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	# this method allow i control the position x of the plane
-	plane.position.x += 60.0 * delta
-	heli.position.x += 60.0 * delta
+	var dir: Vector2 = plane.position.direction_to(heli.position)
+	plane.look_at(get_global_mouse_position())
+	plane.move_local_x(200.0 * delta)
+	#plane.translate(dir * 200 * delta)
+	#heli.position.y += 20.0 * delta
 	#heli.move_local_y(100.0 * delta)
 	#heli.rotate(1.5 * delta)
 	

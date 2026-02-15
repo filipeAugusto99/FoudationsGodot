@@ -14,20 +14,19 @@ script = ExtResource("1_y20wh")
 texture = ExtResource("1_2ucyk")
 centered = false
 
-[node name="Heli" type="Sprite2D" parent="." unique_id=1721312248]
-position = Vector2(351, 434)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("3_fyc3p")
-
-[node name="EatingSound" type="AudioStreamPlayer" parent="." unique_id=656825188]
-stream = ExtResource("5_fyc3p")
-
 [node name="Carrier" type="Sprite2D" parent="." unique_id=1761446161]
 position = Vector2(867, 200)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("5_t11xa")
 
-[node name="Plane" type="Sprite2D" parent="Carrier" unique_id=2046711761]
+[node name="Heli" type="Sprite2D" parent="." unique_id=1721312248]
+position = Vector2(922, 427)
+texture = ExtResource("3_fyc3p")
+
+[node name="EatingSound" type="AudioStreamPlayer" parent="." unique_id=656825188]
+stream = ExtResource("5_fyc3p")
+
+[node name="Plane" type="Sprite2D" parent="." unique_id=2046711761]
 unique_name_in_owner = true
-position = Vector2(-515, 135)
+position = Vector2(337, 317)
 texture = ExtResource("2_y20wh")
