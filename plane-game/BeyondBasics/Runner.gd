@@ -4,21 +4,22 @@ extends EditorScript
 
 # Called when the script is executed (using File -> Run in Script Editor).
 func _run() -> void:
-	var char1: Character = Character.new(100, "Aragorn", "Axe")
-	#char1.health = 20
-	#char1.name = "Aragorn"
-	#char1.weapon = "Axe"
+	var aragorn: Character = Character.new(50, "Aragorn", "Axe")
+	#print(aragorn.get_health())
+	print(aragorn.health)
+	print(aragorn.name)
+	print(aragorn.weapon)
+	#aragorn.set_health(20)
 	
-	#char1.print_health()
+	aragorn.health = 2000
+	aragorn.name = "New Aragorn"
+	aragorn.weapon = "Bow"
+	#print(aragorn.get_health())
+	print(aragorn.health)
+	print(aragorn.name)
+	print(aragorn.weapon)
 	
-	char1.say_info()
-	#print(char1.get_instance_id())
-	
-	
-	#var char2: Character = Character.new()
-	#char2.health = 50
-	#char2.name = "Frodo"
-	#char2.weapon = "Sword"
-	##char2.print_health()
-	#char2.say_info()
-	##print(char2.get_instance_id())
+	##aragorn.set_health(-5)
+	#aragorn.health = -5
+	##print(aragorn.get_health())
+	#print(aragorn.health)
