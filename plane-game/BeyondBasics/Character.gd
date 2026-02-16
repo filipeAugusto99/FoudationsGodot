@@ -7,6 +7,9 @@ static func get_character_count() -> String:
 	return "There are %d characters" % character_count
 
 
+const MAX_SPEED: int = 1000
+
+
 var _health: int = 50
 var _name: String = ""
 var _weapon: String = ""
