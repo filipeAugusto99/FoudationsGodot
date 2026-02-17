@@ -11,7 +11,12 @@ texture = ExtResource("1_0nbjp")
 centered = false
 
 [node name="Hobbit" parent="." unique_id=934708114 instance=ExtResource("2_xf6vi")]
-position = Vector2(175, 531)
+position = Vector2(177, 471)
+hide_time = 1.5
+
+[node name="Hobbit2" parent="." unique_id=804109696 instance=ExtResource("2_xf6vi")]
+position = Vector2(272, 526)
+hide_time = 1.0
 
 [node name="Wizard" parent="." unique_id=2124784778 instance=ExtResource("3_ouhkt")]
 position = Vector2(832, 518)
