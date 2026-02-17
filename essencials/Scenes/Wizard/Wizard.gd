@@ -4,6 +4,9 @@ class_name Wizard
 extends Node2D
 
 
+signal cast_spell 
+
+
 @onready var reveal_timer: Timer = $RevealTimer
 
 
@@ -22,3 +25,11 @@ func _process(delta: float) -> void:
 
 func _on_reveal_timer_timeout() -> void:
 	show()
+
+
+func _on_spell_timer_timeout() -> void:
+	cast_spell.emit()
+	
+
+func hit_by_enemy():
+	scale = Vector2(0.2, 0.2)

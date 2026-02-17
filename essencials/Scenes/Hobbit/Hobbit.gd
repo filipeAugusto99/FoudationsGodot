@@ -4,45 +4,27 @@ class_name Hobbit
 extends Node2D
 
 
-@export  var hide_time: float = 2.0
+signal kill_wizard
 
 
-@onready var sprite_2d: Sprite2D = $Sprite2D
-@onready var hide_timer: Timer = $HideTimer
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("hit_wizard"):
+		kill_wizard.emit()
 
-
-
-var p_frames: int = 0
-var ph_frames: int = 0
-
-
-func _init() -> void:
-	print("_init: %s %s" % [get_instance_id(), name])
-
-
-func _enter_tree() -> void:
-	print("_enter_tree: %s %s" % [get_instance_id(), name])
-
-
-func _exit_tree() -> void:
-	#print("_exit_tree: %s %s" % [get_instance_id(), name])
-	pass
 
 func _ready() -> void:
 	#print("_ready: %s %s" % [get_instance_id(), name])
-	hide_timer.start(hide_time)
 	pass
 	
 	
 func _process(delta: float) -> void:
 	#p_frames += 1
-	pass
+	rotate(PI * delta)	
 
 
-func _physics_process(delta: float) -> void:
-	#ph_frames += 1
-	pass
+func hit_by_spell() -> void:
+	scale = Vector2(0.2, 0.2)
+	set_process(false)
 
 
-func _on_timer_timeout() -> void:
-	hide()
+	
