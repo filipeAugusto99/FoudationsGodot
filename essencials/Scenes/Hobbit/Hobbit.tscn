@@ -6,6 +6,6 @@
 [node name="Hobbit" type="Node2D" unique_id=934708114]
 script = ExtResource("1_dor42")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=199662139]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1573902854]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_y5jml")

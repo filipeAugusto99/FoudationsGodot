@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://cwyxpovdry5c0"]
 
+[ext_resource type="Script" uid="uid://dd8w1d7h715e4" path="res://Scenes/Wizard/Wizard.gd" id="1_si5ek"]
 [ext_resource type="Texture2D" uid="uid://dvpjjdklvpsvu" path="res://Assets/Wizard.png" id="1_ui2fd"]
 
 [node name="Wizard" type="Node2D" unique_id=2124784778]
+script = ExtResource("1_si5ek")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=63557375]
 scale = Vector2(0.5, 0.5)
